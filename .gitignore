@@ -1,8 +1,8 @@
 # Arquivos temporários criados por editor de texto
-.java~
+/**/*.java~
 .gitignore~
 
 # Arquivos compilados 
-.class
+/**/*.class
 
 
