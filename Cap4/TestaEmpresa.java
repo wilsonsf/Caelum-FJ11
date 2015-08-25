@@ -6,13 +6,14 @@ public class TestaEmpresa {
         e.empregados = new Funcionario[10];
         
         for (int i = 0; i < 5; i++) {
-            if (e.adiciona(new Funcionario ("Func"+i,1000+i*200) )) {
+            if (e.adiciona(new Funcionario ("Funcionário"+i,1000+i*200) )) {
                 System.out.println("Adicionado com sucesso!");
             } else {
                 System.out.println("Não tem mais vagas!");
             }
         }
         
-        System.out.println(e);
+        //System.out.println(e);
+        System.out.println(e.mostraEmpregados());
     }
 }

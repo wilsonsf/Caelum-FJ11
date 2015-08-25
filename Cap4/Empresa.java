@@ -13,6 +13,19 @@ public class Empresa {
         return false;
     }
     
+    String mostraEmpregados(){
+        StringBuilder str = new StringBuilder();
+        for(Funcionario f : this.empregados){
+            if (f != null) {
+                str.append("Nome: " + f.nome + "(" + f.salario + ")")
+                   .append("\n"); 
+            }
+        }
+        
+        return str.toString();
+    }
+    
+    
     public String toString() {
         StringBuilder str = new StringBuilder();
         str.append("Empresa: " + this.nome)
