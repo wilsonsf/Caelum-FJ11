@@ -16,10 +16,7 @@ class Funcionario extends Object {
     void mostra() {
         System.out.println("Nome: " + this.nome);
         System.out.println("Departamento: " + this.departamento);
-        System.out.println("Data de Entrada: ");
-        System.out.println("Dia: " + this.dataDeEntrada.dia);
-        System.out.println("Mês: " + this.dataDeEntrada.mes);
-        System.out.println("Ano: " + this.dataDeEntrada.ano);
+        System.out.println("Data de Entrada: " + this.dataDeEntrada.formatada());
         System.out.println("RG: " + this.rg);
         System.out.println("Salário: " + this.salario);
     }   
@@ -41,4 +38,8 @@ class Data {
     int dia, 
         mes, 
         ano;
+        
+    String formatada() {
+        return this.dia + "/" + this.mes + "/" + this.ano;
+    }
 }
