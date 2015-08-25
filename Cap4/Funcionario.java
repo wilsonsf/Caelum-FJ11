@@ -6,9 +6,15 @@ public class Funcionario {
     Data dataDeEntrada;
     
     Funcionario () {
-        System.out.println("Construtor Funcionario");
         this.nome = this.departamento = this.rg = "";
         this.dataDeEntrada = new Data();
+    }
+    
+    Funcionario (String nome, double salario) {
+        this.departamento = this.rg = "";
+        this.dataDeEntrada = new Data();
+        this.nome = nome;
+        this.salario = salario;
     }
     
     void recebeAumento(double valor) {
