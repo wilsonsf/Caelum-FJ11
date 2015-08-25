@@ -17,7 +17,7 @@ public class Empresa {
         StringBuilder str = new StringBuilder();
         for(Funcionario f : this.empregados){
             if (f != null) {
-                str.append("Nome: " + f.nome + "(" + f.salario + ")")
+                str.append(f.mostra())
                    .append("\n"); 
             }
         }

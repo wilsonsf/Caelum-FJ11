@@ -32,12 +32,12 @@ public class Funcionario {
      */
     
     @Deprecated
-    void mostra() {
-        System.out.println("Nome: " + this.nome);
-        System.out.println("Departamento: " + this.departamento);
-        System.out.println("Data de Entrada: " + this.dataDeEntrada.formatada());
-        System.out.println("RG: " + this.rg);
-        System.out.println("Salário: " + this.salario);
+    String mostra() {
+        return  "Nome: " + this.nome +
+                "\nDepartamento: " + this.departamento +
+                "\nData de Entrada: " + this.dataDeEntrada.formatada() +
+                "\nRG: " + this.rg +
+                "\nSalário: " + this.salario;
     }   
     
 
