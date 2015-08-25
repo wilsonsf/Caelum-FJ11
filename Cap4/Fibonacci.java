@@ -1,11 +1,6 @@
 class Fibonacci {
     int calculaFibonacci(int i) {
-        if (i == 0)
-            return 0;
-        else if (i == 1) 
-            return 1;
-        else
-            return this.calculaFibonacci(i-1) + this.calculaFibonacci(i-2);
+        return ( i == 0 ? 0 : ( i == 1) ? 1 : this.calculaFibonacci(i-1) + this.calculaFibonacci(i-2) );
     }
 }
 
@@ -19,3 +14,16 @@ class TestaFibonacci {
         System.out.println();
     }
 }
+
+
+//             6
+//           /   \ 
+//        5       4 (...)
+//      /   \
+//     4       3
+//    / \     / \
+//   3   2   2   1
+//  / \ / \ / \
+//  2 1 1 0 1 0  
+// / \
+// 1 0 
