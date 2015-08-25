@@ -1,33 +1,40 @@
+ /**
+  * 
+  * @since 2015-08-25
+  * @author Wilson de Farias
+  * @version 1.1
+  */
+
 public class Funcionario {
-    String  nome,
-            departamento,
-            rg;
-    double  salario;
-    Data dataDeEntrada;
+    private String nome,
+    private String departamento,
+    private String rg;
+    private double salario;
+    private Data dataDeEntrada;
     
-    Funcionario () {
+    public Funcionario () {
         this.nome = this.departamento = this.rg = "";
         this.dataDeEntrada = new Data();
     }
     
-    Funcionario (String nome) {
+    public Funcionario (String nome) {
         this.departamento = this.rg = "";
         this.dataDeEntrada = new Data();
         this.nome = nome;
     }
     
-    Funcionario (String nome, double salario) {
+    public Funcionario (String nome, double salario) {
         this.departamento = this.rg = "";
         this.dataDeEntrada = new Data();
         this.nome = nome;
         this.salario = salario;
     }
     
-    void recebeAumento(double valor) {
+    public void recebeAumento(double valor) {
         this.salario += valor;
     }
 
-    double calculaGanhoAnual() {
+    public double calculaGanhoAnual() {
         return this.salario * 12;
     }
     
@@ -38,7 +45,7 @@ public class Funcionario {
      */
     
     @Deprecated
-    String mostra() {
+    public String mostra() {
         return  "Nome: " + this.nome +
                 "\nDepartamento: " + this.departamento +
                 "\nData de Entrada: " + this.dataDeEntrada.formatada() +

@@ -1,14 +1,14 @@
 public class Data {
-    int dia, 
-        mes, 
-        ano;
+    public int dia;
+    public int mes; 
+    public int ano;
     
-    Data() {
+    public Data() {
         this.dia = 25;
         this.mes = 8;
         this.ano = 2015;
     }
-    String formatada() {
+    public String formatada() {
         return this.dia + "/" + this.mes + "/" + this.ano;
     }
     
