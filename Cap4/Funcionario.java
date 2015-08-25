@@ -1,9 +1,14 @@
-class Funcionario extends Object {
+public class Funcionario {
     String  nome,
             departamento,
             rg;
     double  salario;
     Data dataDeEntrada;
+    
+    Funcionario () {
+        this.nome = this.departamento = this.rg = "";
+        this.dataDeEntrada = new Data();
+    }
     
     void recebeAumento(double valor) {
         this.salario += valor;
@@ -13,6 +18,13 @@ class Funcionario extends Object {
         return this.salario * 12;
     }
     
+    /**
+     * Imprime valores no console da aplicação
+     *
+     * @deprecated use {@link toString()} instead.  
+     */
+    
+    @Deprecated
     void mostra() {
         System.out.println("Nome: " + this.nome);
         System.out.println("Departamento: " + this.departamento);
@@ -31,15 +43,5 @@ class Funcionario extends Object {
            .append("\nSalário: " + this.salario);
         
         return str.toString();
-    }
-}
-
-class Data {
-    int dia, 
-        mes, 
-        ano;
-        
-    String formatada() {
-        return this.dia + "/" + this.mes + "/" + this.ano;
     }
 }
