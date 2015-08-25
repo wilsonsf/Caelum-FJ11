@@ -10,6 +10,12 @@ public class Funcionario {
         this.dataDeEntrada = new Data();
     }
     
+    Funcionario (String nome) {
+        this.departamento = this.rg = "";
+        this.dataDeEntrada = new Data();
+        this.nome = nome;
+    }
+    
     Funcionario (String nome, double salario) {
         this.departamento = this.rg = "";
         this.dataDeEntrada = new Data();

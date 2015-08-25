@@ -4,9 +4,9 @@ public class Empresa {
     Funcionario [] empregados;
     
     boolean adiciona(Funcionario f_) {
-        for(int i = 0; i < empregados.length; i++) {
-            if (empregados[i] == null) {
-                empregados[i] = f_;
+        for(int i = 0; i < this.empregados.length; i++) {
+            if (this.empregados[i] == null) {
+                this.empregados[i] = f_;
                 return true;
             }
         }
@@ -25,6 +25,14 @@ public class Empresa {
         return str.toString();
     }
     
+    boolean contem(Funcionario f) {
+        for (Funcionario fEmpregado : this.empregados) {
+            if (fEmpregado != null && fEmpregado.nome.compareTo(f.nome) == 0) {
+                return true;
+            }   
+        }
+        return false;
+    }
     
     public String toString() {
         StringBuilder str = new StringBuilder();

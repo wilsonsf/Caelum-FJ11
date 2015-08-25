@@ -13,7 +13,13 @@ public class TestaEmpresa {
             }
         }
         
+        e.empregados[9] = new Funcionario("Wilson",5000);
+        
+        if (e.contem(new Funcionario("Wilson")))
+            System.out.println("Funcionário bandido encontrado!");
+        
         //System.out.println(e);
         System.out.println(e.mostraEmpregados());
+        
     }
 }
