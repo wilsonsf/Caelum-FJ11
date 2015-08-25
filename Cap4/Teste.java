@@ -4,12 +4,13 @@ class Teste {
         f1.nome = "Wilson";
         f1.salario = 1000;
         
-        System.out.println("Salário atual de " + f1.nome + ": " + f1.salario);
+        f1.mostra();
         System.out.println("Ganho anual de " + f1.nome + ": " + f1.calculaGanhoAnual()); 
         
-        
+        System.out.println("\nDados atualizados!\n");
         f1.recebeAumento(500);
-        System.out.println("Salário atual de " + f1.nome + ": " + f1.salario);
+        f1.mostra();
         System.out.println("Novo ganho anual de " + f1.nome + ": " + f1.calculaGanhoAnual());
+        
     }
 }
