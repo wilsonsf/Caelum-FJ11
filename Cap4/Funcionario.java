@@ -6,6 +6,7 @@ public class Funcionario {
     Data dataDeEntrada;
     
     Funcionario () {
+        System.out.println("Construtor Funcionario");
         this.nome = this.departamento = this.rg = "";
         this.dataDeEntrada = new Data();
     }
