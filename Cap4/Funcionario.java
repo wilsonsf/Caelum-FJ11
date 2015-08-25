@@ -24,9 +24,7 @@ public class Funcionario {
     }
     
     public Funcionario (String nome, double salario) {
-        this.departamento = this.rg = "";
-        this.dataDeEntrada = new Data();
-        this.nome = nome;
+        this(nome);
         this.salario = salario;
     }
     
