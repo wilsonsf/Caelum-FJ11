@@ -43,7 +43,7 @@ public class Empresa {
         for(Funcionario f : this.empregados) {
             if (f != null) {
                 str.append(f);
-                str.append("\n------------------");
+                str.append("\n------------------\n");
             }
         }
         
@@ -84,5 +84,14 @@ public class Empresa {
             }
         }
         return false;
+    }
+    public boolean setEmpregado(Funcionario funcionario, int posicao) {
+        if (posicao >= 0 && posicao < this.empregados.length) {
+            this.empregados[posicao] = funcionario;
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 }
