@@ -18,8 +18,7 @@ public class Funcionario {
     }
     
     public Funcionario (String nome) {
-        this.departamento = this.rg = "";
-        this.dataDeEntrada = new Data();
+        this();
         this.nome = nome;
     }
     
@@ -65,43 +64,45 @@ public class Funcionario {
     
     // Getters e Setters
     
-    void setNome (String nome) {
+    public void setNome (String nome) {
         this.nome = nome;
     }
     
-    String getNome () {
+    public String getNome () {
         return this.nome;
     }
     
-    void setDepartamento (String departamento) {
+    public void setDepartamento (String departamento) {
         this.departamento = departamento;
     }
     
-    String getDepartamento () {
+    public String getDepartamento () {
         return this.departamento;
     }
     
-    void setRG (String rg) {
+    public void setRG (String rg) {
         this.rg = rg;
     }
     
-    String getRG () {
+    public String getRG () {
         return this.rg;
     }
     
-    void setSalario (double salario) {
+    // Salario deve ser inicializado na Allocação
+    // 
+    public void setSalario (double salario) {
         this.salario = salario;
     }
     
-    double getSalario () {
+    public double getSalario () {
         return this.salario;
     }
     
-    void setDataDeEntrada(Data dataDeEntrada) {
+    public void setDataDeEntrada(Data dataDeEntrada) {
         this.dataDeEntrada = dataDeEntrada;
     }
     
-    Data getDataDeEntrada() {
+    public Data getDataDeEntrada() {
         return this.dataDeEntrada;
     }
 }

@@ -1,0 +1,9 @@
+jdb MyClass
+stop at MyClass:<line no>
+run
+step //step into
+next //step over
+help
+cont(inue)
+print
+catch <ExceptionFoo>
