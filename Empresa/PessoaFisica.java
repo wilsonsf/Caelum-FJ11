@@ -1,6 +1,6 @@
 public class PessoaFisica {
-    protected String cpf;
-    
+    private String cpf;
+
     private PessoaFisica(String cpf) {
         if (valida(cpf))
             this.cpf = cpf;
@@ -13,5 +13,13 @@ public class PessoaFisica {
         return true;
         // else
         // return false;
+    }
+    
+    public String getCPF() {
+        return this.cpf;
+    }
+    public void setCPF(String cpf) {
+        if (valida(cpf))
+            this.cpf = cpf;
     }
 }
