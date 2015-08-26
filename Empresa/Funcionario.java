@@ -94,7 +94,8 @@ public class Funcionario {
     }
     
     // Salario deve ser inicializado na Allocação
-    /*
+    // Mas e se Toinha do RH errar o salário do cara, como ela faz a correção?
+    // Remover esses obriga a criação de um outro objeto e copia dos valores 
     public void setSalario (double salario) {
         this.salario = salario;
     }
@@ -102,7 +103,6 @@ public class Funcionario {
     public double getSalario () {
         return this.salario;
     }
-    */
     
     public Data getDataDeEntrada() {
         return this.dataDeEntrada;
