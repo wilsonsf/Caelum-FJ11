@@ -1,6 +1,5 @@
 public class Conta {
-    private double saldo;
-    
+    protected double saldo;
     
     public boolean saca(double valor) {
         if (this.saldo >= valor) {
@@ -29,4 +28,10 @@ public class Conta {
         this.saldo = saldo;
     }
     */
+}
+
+class TestaConta {
+    public static void main (String [] args) {
+    
+    }
 }
