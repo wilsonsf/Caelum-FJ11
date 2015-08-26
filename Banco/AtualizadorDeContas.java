@@ -22,3 +22,8 @@ public class AtualizadorDeContas {
     }
 }
 
+class TestaAtualizadorDeContas {
+    public static void main (String[] args) {
+        Conta c = new Conta();       
+    }
+}
