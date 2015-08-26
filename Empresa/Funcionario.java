@@ -12,7 +12,7 @@ public class Funcionario {
     private double salario;
     private Data dataDeEntrada;
     
-    public Funcionario () {
+    private Funcionario () {
         this.nome = this.departamento = this.rg = "";
         this.dataDeEntrada = new Data();
     }
@@ -32,13 +32,6 @@ public class Funcionario {
         this.salario = salario;
     }
     
-    public void setAumento(double valor) {
-        this.salario += valor;
-    }
-
-    public double getGanhoAnual() {
-        return this.salario * 12;
-    }
     
     /**
      * Imprime valores no console da aplicação
@@ -68,33 +61,40 @@ public class Funcionario {
     }
     
     // Getters e Setters
-    
-    public void setNome (String nome) {
-        this.nome = nome;
+    public void setAumento(double valor) {
+        this.salario += valor;
+    }
+
+    public double getGanhoAnual() {
+        return this.salario * 12;
     }
     
     public String getNome () {
         return this.nome;
     }
     
-    public void setDepartamento (String departamento) {
-        this.departamento = departamento;
+    public void setNome (String nome) {
+        this.nome = nome;
     }
     
     public String getDepartamento () {
         return this.departamento;
     }
     
-    public void setRG (String rg) {
-        this.rg = rg;
+    public void setDepartamento (String departamento) {
+        this.departamento = departamento;
     }
     
     public String getRG () {
         return this.rg;
     }
     
+    public void setRG (String rg) {
+        this.rg = rg;
+    }
+    
     // Salario deve ser inicializado na Allocação
-    // 
+    /*
     public void setSalario (double salario) {
         this.salario = salario;
     }
@@ -102,12 +102,13 @@ public class Funcionario {
     public double getSalario () {
         return this.salario;
     }
-    
-    public void setDataDeEntrada(Data dataDeEntrada) {
-        this.dataDeEntrada = dataDeEntrada;
-    }
+    */
     
     public Data getDataDeEntrada() {
         return this.dataDeEntrada;
+    }
+    
+    public void setDataDeEntrada(Data dataDeEntrada) {
+        this.dataDeEntrada = dataDeEntrada;
     }
 }
