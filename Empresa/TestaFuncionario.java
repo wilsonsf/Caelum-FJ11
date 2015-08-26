@@ -1,9 +1,9 @@
 public class TestaFuncionario {
     public static void main (String [] args) {
-        Funcionario f1 = new Funcionario();
-        f1.setNome("Wilson");
-        
-        f1.setSalario(1000);
+        Funcionario f1 = new Funcionario("Wilson",1000d);
+                        // new Funcionario("Wilson");
+        // f1.setNome("Wilson");
+        // f1.setSalario(1000);
         
         //f1.mostra();
         System.out.println(f1);

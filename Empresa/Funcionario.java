@@ -22,6 +22,11 @@ public class Funcionario {
         this.nome = nome;
     }
     
+    public Funcionario (double salario) {
+        this();
+        this.salario = salario;
+    }
+    
     public Funcionario (String nome, double salario) {
         this(nome);
         this.salario = salario;
