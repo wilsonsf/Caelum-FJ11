@@ -3,14 +3,13 @@ public class Empresa {
     private String cnpj;
     private Funcionario [] empregados;
     
-    public boolean adiciona(Funcionario f_) {
-        for(int i = 0; i < this.empregados.length; i++) {
-            if (this.empregados[i] == null) {
-                this.empregados[i] = f_;
-                return true;
-            }
-        }
-        return false;
+    private Empresa() {
+        this.nome = this.cnpj = "";
+    }
+    
+    public Empresa(int n) {
+        this();
+        this.empregados = new Funcionario[n];
     }
     
     public String mostraEmpregados(){
@@ -25,9 +24,10 @@ public class Empresa {
         return str.toString();
     }
     
-    public boolean contem(Funcionario f) {
-        for (Funcionario fEmpregado : this.empregados) {
-            if (fEmpregado != null && fEmpregado.nome.compareTo(f.nome) == 0) {
+    public boolean contem(Funcionario funcionario) {
+        for (Funcionario empregado : this.empregados) {
+            if (empregado != null && 
+                empregado.getNome().compareTo(funcionario.getNome()) == 0) {
                 return true;
             }   
         }
@@ -48,5 +48,41 @@ public class Empresa {
         }
         
         return str.toString();
+    }
+    
+    // Getters & Setters
+    
+    public String getNome() {
+        return this.nome;
+    }
+    
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+    
+    public String getCNPJ() {
+        return this.cnpj;
+    }
+    
+    public void setCNPJ(String cnpj) {
+        this.cnpj = cnpj;
+    }
+    
+    public Funcionario[] getEmpregados() {
+        return this.empregados;
+    }
+    
+    public Funcionario getEmpregado(int posicao) {
+        return this.empregados[posicao];
+    }
+    
+    public boolean setEmpregado(Funcionario f) {
+        for(int i = 0; i < this.empregados.length; i++) {
+            if (this.empregados[i] == null) {
+                this.empregados[i] = f;
+                return true;
+            }
+        }
+        return false;
     }
 }
