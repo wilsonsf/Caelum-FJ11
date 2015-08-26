@@ -4,8 +4,8 @@ public class Data {
     public int ano;
     
     public Data() {
-        this.dia = 25;
-        this.mes = 8;
+        this.dia = 1;
+        this.mes = 1;
         this.ano = 2015;
     }
     public String formatada() {

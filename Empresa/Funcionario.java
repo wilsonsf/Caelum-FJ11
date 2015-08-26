@@ -6,8 +6,8 @@
   */
 
 public class Funcionario {
-    private String nome,
-    private String departamento,
+    private String nome;
+    private String departamento;
     private String rg;
     private double salario;
     private Data dataDeEntrada;
@@ -28,11 +28,11 @@ public class Funcionario {
         this.salario = salario;
     }
     
-    public void recebeAumento(double valor) {
+    public void setAumento(double valor) {
         this.salario += valor;
     }
 
-    public double calculaGanhoAnual() {
+    public double getGanhoAnual() {
         return this.salario * 12;
     }
     
@@ -54,12 +54,54 @@ public class Funcionario {
 
     public String toString() {
         StringBuilder str = new StringBuilder();
-        str.append("\nNome: " + this.nome)
+        str.append("Nome: " + this.nome)
            .append("\nDepartamento: " + this.departamento)
            .append("\nData de Entrada: " + this.dataDeEntrada)
            .append("\nRG: " + this.rg)
            .append("\nSalário: " + this.salario);
         
         return str.toString();
+    }
+    
+    // Getters e Setters
+    
+    void setNome (String nome) {
+        this.nome = nome;
+    }
+    
+    String getNome () {
+        return this.nome;
+    }
+    
+    void setDepartamento (String departamento) {
+        this.departamento = departamento;
+    }
+    
+    String getDepartamento () {
+        return this.departamento;
+    }
+    
+    void setRG (String rg) {
+        this.rg = rg;
+    }
+    
+    String getRG () {
+        return this.rg;
+    }
+    
+    void setSalario (double salario) {
+        this.salario = salario;
+    }
+    
+    double getSalario () {
+        return this.salario;
+    }
+    
+    void setDataDeEntrada(Data dataDeEntrada) {
+        this.dataDeEntrada = dataDeEntrada;
+    }
+    
+    Data getDataDeEntrada() {
+        return this.dataDeEntrada;
     }
 }
