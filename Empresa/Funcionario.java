@@ -11,8 +11,12 @@ public class Funcionario {
     private String rg;
     private double salario;
     private Data dataDeEntrada;
+    private int identificador;
+    private static int contadorGlobal = 0;
     
     private Funcionario () {
+        Funcionario.contadorGlobal++;
+        this.identificador = Funcionario.contadorGlobal;
         this.nome = this.departamento = this.rg = "";
         this.dataDeEntrada = new Data();
     }
@@ -41,7 +45,8 @@ public class Funcionario {
     
     @Deprecated
     public String mostra() {
-        return  "Nome: " + this.nome +
+        return  "Matrícula: " + this.identificador +
+                "\nNome: " + this.nome +
                 "\nDepartamento: " + this.departamento +
                 "\nData de Entrada: " + this.dataDeEntrada.formatada() +
                 "\nRG: " + this.rg +
@@ -51,7 +56,8 @@ public class Funcionario {
 
     public String toString() {
         StringBuilder str = new StringBuilder();
-        str.append("Nome: " + this.nome)
+        str.append("Matrícula: " + this.identificador)
+           .append("\nNome: " + this.nome)
            .append("\nDepartamento: " + this.departamento)
            .append("\nData de Entrada: " + this.dataDeEntrada)
            .append("\nRG: " + this.rg)
@@ -69,6 +75,9 @@ public class Funcionario {
         return this.salario * 12;
     }
     
+    public int getIdentificador () {
+        return this.identificador;
+    }
     public String getNome () {
         return this.nome;
     }

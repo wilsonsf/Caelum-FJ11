@@ -21,6 +21,8 @@ public class TestaFuncionario {
         //f1.mostra();
         System.out.println(f1);
         System.out.println("Novo ganho anual de " + f1.getNome() + ": " + f1.getGanhoAnual());
-        
+        System.out.println();
+        Funcionario f2 = new Funcionario("Jonicleyson",1000000);
+        System.out.println(f2);
     }
 }
