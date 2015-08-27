@@ -1,4 +1,5 @@
 package caelum.classes;
+
 public abstract class Conta {
 	protected int numero;
 	protected int agencia;
@@ -25,7 +26,11 @@ public abstract class Conta {
 	}
 
 	public void deposita(double valor) {
-		this.saldo += valor;
+		if (valor <= 0) {
+			throw new IllegalArgumentException();
+		} else {
+			this.saldo += valor;
+		}
 	}
 
 	public boolean saca(double valor) {
