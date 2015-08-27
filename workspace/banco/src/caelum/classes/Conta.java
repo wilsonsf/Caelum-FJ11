@@ -27,7 +27,7 @@ public abstract class Conta {
 
 	public void deposita(double valor) {
 		if (valor <= 0) {
-			throw new IllegalArgumentException();
+			throw new IllegalArgumentException("Você tentou depositar um valor negativo");
 		} else {
 			this.saldo += valor;
 		}

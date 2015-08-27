@@ -10,7 +10,7 @@ public class TestaDeposito {
 		try {
 			cp.deposita(-100);
 		} catch (IllegalArgumentException e) {
-			System.out.println("Você tentou depositar um valor inválido");
+			System.out.println(e.getMessage());
 		}
 		
 	}

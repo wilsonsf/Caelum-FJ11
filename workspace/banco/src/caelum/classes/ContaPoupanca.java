@@ -2,7 +2,7 @@ package caelum.classes;
 public class ContaPoupanca extends Conta {
 	@Override
 	public void deposita(double valor) {
-		super.deposita(valor - 0.1);
+		super.deposita(valor);
 	}
 
 	@Override
