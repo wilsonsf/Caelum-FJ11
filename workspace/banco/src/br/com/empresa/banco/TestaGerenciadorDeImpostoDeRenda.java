@@ -1,4 +1,7 @@
-package caelum.teste;
+package br.com.empresa.banco;
+import br.com.empresa.banco.conta.ContaCorrente;
+import br.com.empresa.banco.conta.SeguroDeVida;
+import br.com.empresa.banco.sistema.GerenciadorDeImpostoDeRenda;
 import caelum.classes.*;
 
 public class TestaGerenciadorDeImpostoDeRenda {

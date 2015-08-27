@@ -1,8 +1,8 @@
-package caelum.teste;
+package br.com.empresa.banco;
 
-import caelum.classes.Conta;
-import caelum.classes.ContaPoupanca;
-import caelum.classes.ValorInvalidoException;
+import br.com.empresa.banco.conta.Conta;
+import br.com.empresa.banco.conta.ContaPoupanca;
+import br.com.empresa.banco.conta.ValorInvalidoException;
 
 public class TestaDeposito {
 

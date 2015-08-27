@@ -1,4 +1,6 @@
-package caelum.teste;
+package br.com.empresa.banco;
+import br.com.empresa.banco.conta.ContaCorrente;
+import br.com.empresa.banco.conta.Tributavel;
 import caelum.classes.*;
 
 public class TestaTributavel {

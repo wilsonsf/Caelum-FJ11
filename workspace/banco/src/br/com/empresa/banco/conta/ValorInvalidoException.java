@@ -1,4 +1,4 @@
-package caelum.classes;
+package br.com.empresa.banco.conta;
 
 @SuppressWarnings("serial")
 public class ValorInvalidoException extends RuntimeException {

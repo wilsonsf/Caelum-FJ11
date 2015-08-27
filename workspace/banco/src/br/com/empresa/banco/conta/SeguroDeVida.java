@@ -1,4 +1,4 @@
-package caelum.classes;
+package br.com.empresa.banco.conta;
 public class SeguroDeVida implements Tributavel {
 
 	@Override

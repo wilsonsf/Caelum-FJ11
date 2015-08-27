@@ -1,4 +1,7 @@
-package caelum.classes;
+package br.com.empresa.banco.sistema;
+
+import br.com.empresa.banco.conta.Tributavel;
+
 public class GerenciadorDeImpostoDeRenda {
 	private double total;
 	
