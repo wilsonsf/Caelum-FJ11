@@ -1,3 +1,4 @@
+package caelum.classes;
 public abstract class Conta {
 	protected int numero;
 	protected int agencia;

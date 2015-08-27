@@ -1,3 +1,4 @@
+package caelum.classes;
 public class ContaCorrente extends Conta implements Tributavel {
 	@Override
 	public void deposita(double valor) {

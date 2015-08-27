@@ -1,3 +1,4 @@
+package caelum.classes;
 public class ContaPoupanca extends Conta {
 	@Override
 	public void deposita(double valor) {

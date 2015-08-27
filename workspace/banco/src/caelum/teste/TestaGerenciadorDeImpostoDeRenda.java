@@ -1,3 +1,6 @@
+package caelum.teste;
+import caelum.classes.*;
+
 public class TestaGerenciadorDeImpostoDeRenda {
 
 	public static void main(String[] args) {

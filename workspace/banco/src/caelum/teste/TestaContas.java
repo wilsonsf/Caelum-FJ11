@@ -1,3 +1,6 @@
+package caelum.teste;
+import caelum.classes.*;
+
 public class TestaContas {
 	public static void main(String[] args) {
 		Conta conta = new ContaCorrente();

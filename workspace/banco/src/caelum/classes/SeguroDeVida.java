@@ -1,3 +1,4 @@
+package caelum.classes;
 public class SeguroDeVida implements Tributavel {
 
 	@Override

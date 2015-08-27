@@ -1,3 +1,4 @@
+package caelum.classes;
 public class AtualizadorDeContas {
 	private double saldoTotal = 0;
 	private double selic;
