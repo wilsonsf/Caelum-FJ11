@@ -2,6 +2,7 @@ package caelum.teste;
 
 import caelum.classes.Conta;
 import caelum.classes.ContaPoupanca;
+import caelum.classes.ValorInvalidoException;
 
 public class TestaDeposito {
 
@@ -9,7 +10,7 @@ public class TestaDeposito {
 		Conta cp = new ContaPoupanca();
 		try {
 			cp.deposita(-100);
-		} catch (IllegalArgumentException e) {
+		} catch (ValorInvalidoException e) {
 			System.out.println(e.getMessage());
 		}
 		
