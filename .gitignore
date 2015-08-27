@@ -9,4 +9,6 @@
 
 # Arquivos Eclipse
 /.metadata/
+/**/.metadata/
 /RemoteSystemsTempFiles/
+/**/RemoteSystemsTempFiles/
