@@ -1,7 +1,7 @@
 public class Conta {
-	private int numero;
-	private int agencia;
-	private double saldo;
+	protected int numero;
+	protected int agencia;
+	protected double saldo;
 
 	public int getNumero() {
 		return numero;
@@ -31,8 +31,8 @@ public class Conta {
 		if (this.saldo >= valor) {
 			this.saldo -= valor;
 			return true;
-		}
-		return false;
+		} else
+			return false;
 	}
 
 	public void atualiza(double taxa) {
