@@ -1,8 +1,8 @@
 package br.com.empresa.banco;
+
 import br.com.empresa.banco.conta.Conta;
 import br.com.empresa.banco.conta.ContaCorrente;
 import br.com.empresa.banco.conta.ContaPoupanca;
-import caelum.classes.*;
 
 public class TestaContas {
 	public static void main(String[] args) {
