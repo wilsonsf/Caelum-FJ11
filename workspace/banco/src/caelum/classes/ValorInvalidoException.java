@@ -6,6 +6,9 @@ public class ValorInvalidoException extends RuntimeException {
 		super ();
 	}
 	
+	public ValorInvalidoException (double valor) {
+		super("Valor invalido: " + valor);
+	}
 	public ValorInvalidoException (String msg) {
 		super (msg);
 	}
