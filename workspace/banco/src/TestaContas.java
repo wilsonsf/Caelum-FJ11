@@ -7,5 +7,11 @@ public class TestaContas {
 		} else {
 			System.out.println("Saldo insuficiente");
 		}
+		conta.atualiza(0.01);
+		
+		@SuppressWarnings("unused")
+		ContaCorrente contaCorrente = new ContaCorrente();
+		
+		new ContaPoupanca();
 	}
 }
