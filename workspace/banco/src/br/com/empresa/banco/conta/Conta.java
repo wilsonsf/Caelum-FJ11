@@ -1,12 +1,21 @@
 package br.com.empresa.banco.conta;
 
 public abstract class Conta {
+	protected String cliente;
 	protected int numero;
 	protected int agencia;
 	protected double saldo;
 
 	public Conta(double saldo) {
 		this.saldo = saldo;
+	}
+
+	public String getCliente() {
+		return cliente;
+	}
+
+	public void setCliente(String cliente) {
+		this.cliente = cliente;
 	}
 
 	public int getNumero() {
@@ -56,9 +65,13 @@ public abstract class Conta {
 	@Override
 	public boolean equals(Object obj) {
 		// if ((obj instanceof Conta)) {
-		// 	return false;
+		// return false;
 		// }
 		Conta conta = (Conta) obj;
-		return conta.getNumero() == this.numero;
+		if (conta.getNumero() == this.numero && 
+				conta.getCliente().equals(this.cliente)) {
+			return true;
+		}
+		return false;
 	}
 }

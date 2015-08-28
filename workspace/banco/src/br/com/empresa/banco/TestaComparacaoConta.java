@@ -9,6 +9,8 @@ public class TestaComparacaoConta {
 		// TODO Auto-generated method stub
 		Conta c1 = new ContaCorrente(1000);
 		Conta c2 = new ContaCorrente(1000);
+		c1.setCliente("Wilson");
+		c2.setCliente("Wilson");
 		
 		c1.setNumero(15);
 		c2.setNumero(15);
