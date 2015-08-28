@@ -7,7 +7,7 @@ import br.com.empresa.banco.conta.ValorInvalidoException;
 public class TestaDeposito {
 
 	public static void main(String[] args) {
-		Conta cp = new ContaPoupanca();
+		Conta cp = new ContaPoupanca(0);
 		try {
 			cp.deposita(-100);
 		} catch (ValorInvalidoException e) {

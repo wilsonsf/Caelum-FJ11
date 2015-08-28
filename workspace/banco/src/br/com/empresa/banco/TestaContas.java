@@ -6,7 +6,7 @@ import br.com.empresa.banco.conta.ContaPoupanca;
 
 public class TestaContas {
 	public static void main(String[] args) {
-		Conta conta = new ContaCorrente();
+		Conta conta = new ContaCorrente(0);
 		conta.deposita(1000.5);
 		if (conta.saca(50.5)) {
 			System.out.println("Contando cédulas");
@@ -15,8 +15,8 @@ public class TestaContas {
 		}
 		conta.atualiza(0.01);
 
-		new ContaCorrente();
+		new ContaCorrente(0);
 
-		new ContaPoupanca();
+		new ContaPoupanca(0);
 	}
 }

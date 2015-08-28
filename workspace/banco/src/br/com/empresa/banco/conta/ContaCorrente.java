@@ -1,6 +1,11 @@
 package br.com.empresa.banco.conta;
 
 public class ContaCorrente extends Conta implements Tributavel {
+	
+	public ContaCorrente(double saldo) {
+		super(saldo);
+	}
+
 	@Override
 	public void deposita(double valor) {
 		super.deposita(valor - 0.1);

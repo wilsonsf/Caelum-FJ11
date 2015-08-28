@@ -5,6 +5,10 @@ public abstract class Conta {
 	protected int agencia;
 	protected double saldo;
 
+	public Conta(double saldo) {
+		this.saldo = saldo;
+	}
+
 	public int getNumero() {
 		return numero;
 	}
@@ -43,4 +47,9 @@ public abstract class Conta {
 
 	public abstract void atualiza(double taxa);
 
+	@Override
+	public String toString() {
+		return super.toString() + "\nAgência: " + this.agencia + "\nNúmero:  "
+				+ this.numero + "\nSaldo:   " + this.saldo;
+	}
 }

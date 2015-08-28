@@ -12,7 +12,7 @@ public class TestaGerenciadorDeImpostoDeRenda {
 		SeguroDeVida sv = new SeguroDeVida();
 		gerenciador.adiciona(sv);
 
-		ContaCorrente cc = new ContaCorrente();
+		ContaCorrente cc = new ContaCorrente(0);
 		cc.deposita(1000);
 		gerenciador.adiciona(cc);
 

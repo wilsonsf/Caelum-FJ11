@@ -1,5 +1,9 @@
 package br.com.empresa.banco;
 
+import java.io.PrintStream;
+
+import br.com.empresa.banco.conta.ContaCorrente;
+
 public class TestaString {
 
 	public static void main(String[] args) {
@@ -18,5 +22,10 @@ public class TestaString {
 
 		System.out.println((s.isEmpty()) ? "Está vazio" : "Não está vazio");
 		System.out.println("Tamanho de (" + s + ") : " + s.length());
+		
+		PrintStream saida = System.out;
+		saida.println("Ola");
+		
+		System.out.println(new ContaCorrente(250.0));
 	}
 }
