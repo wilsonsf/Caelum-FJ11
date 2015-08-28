@@ -23,13 +23,36 @@ public class TestaOrdenacao {
 		ContaPoupanca c3 = new ContaPoupanca(0);
 		c3.setNumero(1854);
 		contas.add(c3);
-
+		System.out.println();
+		
 		for (ContaPoupanca umaConta : contas) {
 			System.out.println("Número: " + umaConta.getNumero());
 		}	
 		
 		Collections.sort(contas);
-
+		System.out.println();
+		
+		for (ContaPoupanca umaConta : contas) {
+			System.out.println("Número: " + umaConta.getNumero());
+		}
+		
+		Collections.reverse(contas);
+		System.out.println();
+		
+		for (ContaPoupanca umaConta : contas) {
+			System.out.println("Número: " + umaConta.getNumero());
+		}
+		
+		Collections.shuffle(contas);
+		System.out.println();
+		
+		for (ContaPoupanca umaConta : contas) {
+			System.out.println("Número: " + umaConta.getNumero());
+		}
+		
+		Collections.rotate(contas, 2);
+		System.out.println();
+		
 		for (ContaPoupanca umaConta : contas) {
 			System.out.println("Número: " + umaConta.getNumero());
 		}
