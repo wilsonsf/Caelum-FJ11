@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="ContaPoupanca"/>
+<fullyQualifiedTypeName name="AreaCalculavel"/>
+<fullyQualifiedTypeName name="Retangulo"/>
+<fullyQualifiedTypeName name="Quadrado"/>
+<fullyQualifiedTypeName name="Circulo"/>
+<fullyQualifiedTypeName name="Tributavel"/>
+<fullyQualifiedTypeName name="GerenciadorDeImpostoDeRenda"/>
+<fullyQualifiedTypeName name="SeguroDeVida"/>
+<fullyQualifiedTypeName name="ContaCorrente"/>
+<fullyQualifiedTypeName name="caelum.classes.Conta"/>
+<fullyQualifiedTypeName name="caelum.classes.ContaPoupanca"/>
+<fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
+<fullyQualifiedTypeName name="caelum.classes.ValorInvalidoException"/>
+</qualifiedTypeNameHistroy>

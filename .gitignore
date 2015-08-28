@@ -8,7 +8,13 @@
 /**/bin/
 
 # Arquivos Eclipse
-/.metadata/
-/**/.metadata/
-/RemoteSystemsTempFiles/
-/**/RemoteSystemsTempFiles/
+# /.metadata/
+# /**/.metadata/
+# /RemoteSystemsTempFiles/
+# /**/RemoteSystemsTempFiles/
+
+# Versionamento de arquivos local do Eclipse
+/**/.metadata/.plugins/org.eclipse.core.resources/.history
+
+# Versionamento usando MyLyn
+/**/.mylyn
