@@ -52,4 +52,13 @@ public abstract class Conta {
 		return super.toString() + "\nAgência: " + this.agencia + "\nNúmero:  "
 				+ this.numero + "\nSaldo:   " + this.saldo;
 	}
+
+	@Override
+	public boolean equals(Object obj) {
+		// if ((obj instanceof Conta)) {
+		// 	return false;
+		// }
+		Conta conta = (Conta) obj;
+		return conta.getNumero() == this.numero;
+	}
 }
