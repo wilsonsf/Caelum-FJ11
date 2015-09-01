@@ -58,8 +58,10 @@ public abstract class Conta {
 
 	@Override
 	public String toString() {
-		return super.toString() + "\nAgência: " + this.agencia + "\nNúmero:  "
-				+ this.numero + "\nSaldo:   " + this.saldo;
+		return	"Agência: " + this.agencia 	+ "\n" +
+				"Número:  " + this.numero 	+ "\n" + 
+				"Saldo:   " + this.saldo 	+ "\n" + 
+				"Cliente: " + this.cliente 	+ "\n";
 	}
 
 	@Override
