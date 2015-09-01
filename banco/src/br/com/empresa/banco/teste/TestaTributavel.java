@@ -1,4 +1,4 @@
-package br.com.empresa.banco;
+package br.com.empresa.banco.teste;
 
 import br.com.empresa.banco.conta.ContaCorrente;
 import br.com.empresa.banco.conta.Tributavel;

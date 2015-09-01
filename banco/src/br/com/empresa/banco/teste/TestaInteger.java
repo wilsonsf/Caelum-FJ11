@@ -1,4 +1,4 @@
-package br.com.empresa.banco;
+package br.com.empresa.banco.teste;
 
 public class TestaInteger {
 	public static void main(String[] args) {
