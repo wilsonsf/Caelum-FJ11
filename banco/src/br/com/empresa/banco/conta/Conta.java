@@ -68,8 +68,6 @@ public abstract class Conta implements Comparable<Conta>{
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + agencia;
-		result = prime * result + ((cliente == null) ? 0 : cliente.hashCode());
 		result = prime * result + numero;
 		return result;
 	}
