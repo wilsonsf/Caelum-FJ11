@@ -27,5 +27,13 @@ public class TestaString {
 		saida.println("Ola");
 		
 		System.out.println(new ContaCorrente(250.0));
+		
+		manipulaString("arara");
+	}
+	
+	public static void manipulaString(String manipulada) {
+		for (int i = 0; i < manipulada.length(); i++) {
+			System.out.println(manipulada.charAt(i));
+		}
 	}
 }
