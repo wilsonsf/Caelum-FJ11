@@ -9,6 +9,12 @@ public abstract class Conta implements Comparable<Conta>{
 	public Conta(double saldo) {
 		this.saldo = saldo;
 	}
+	
+	public Conta(int numero, String cliente) {
+		this(0.0);
+		this.numero = numero;
+		this.cliente = cliente;
+	}
 
 	public String getCliente() {
 		return cliente;
@@ -82,11 +88,6 @@ public abstract class Conta implements Comparable<Conta>{
 			return false;
 		Conta other = (Conta) obj;
 		if (agencia != other.agencia)
-			return false;
-		if (cliente == null) {
-			if (other.cliente != null)
-				return false;
-		} else if (!cliente.equals(other.cliente))
 			return false;
 		if (numero != other.numero)
 			return false;

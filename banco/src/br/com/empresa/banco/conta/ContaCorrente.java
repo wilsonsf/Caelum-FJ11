@@ -6,6 +6,10 @@ public class ContaCorrente extends Conta implements Tributavel {
 		super(saldo);
 	}
 
+	public ContaCorrente(int numero, String cliente) {
+		super(numero, cliente);
+	}
+
 	@Override
 	public void deposita(double valor) {
 		super.deposita(valor - 0.1);
