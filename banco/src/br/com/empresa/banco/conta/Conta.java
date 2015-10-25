@@ -1,6 +1,6 @@
 package br.com.empresa.banco.conta;
 
-public abstract class Conta {
+public abstract class Conta implements Comparable<Conta>{
 	protected String cliente;
 	protected int numero;
 	protected int agencia;
@@ -75,5 +75,10 @@ public abstract class Conta {
 			return true;
 		}
 		return false;
+	}
+	
+	@Override
+	public int compareTo(Conta o) {
+		return this.getNumero() - o.getNumero();
 	}
 }
