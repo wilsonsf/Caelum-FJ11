@@ -29,11 +29,20 @@ public class TestaString {
 		System.out.println(new ContaCorrente(250.0));
 		
 		manipulaString("arara");
+		manipulaInversoDaString("Socorram-me, subi no ônibus em Marrocos");
+		manipulaInversoDaString("anotaram a data da maratona");
 	}
 	
 	public static void manipulaString(String manipulada) {
 		for (int i = 0; i < manipulada.length(); i++) {
 			System.out.println(manipulada.charAt(i));
 		}
+	}
+	
+	public static void manipulaInversoDaString(String manipulada) {
+		for (int i = manipulada.length()-1; i >= 0; i--) {
+			System.out.print(manipulada.charAt(i));
+		}
+		System.out.println();
 	}
 }
