@@ -2,7 +2,7 @@ import java.io.IOException;
 import java.io.PrintStream;
 import java.util.Scanner;
 
-public class EntradaDeUMarquivo {
+public class EntradaDeUmArquivo {
 
 	public static void main(String[] args) throws IOException {
 		Scanner entrada = new Scanner(System.in);
