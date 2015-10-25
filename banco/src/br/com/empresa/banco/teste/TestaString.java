@@ -31,6 +31,7 @@ public class TestaString {
 		manipulaString("arara");
 		manipulaInversoDaString("Socorram-me, subi no ônibus em Marrocos");
 		manipulaInversoDaString("anotaram a data da maratona");
+		manipulaPartesDaString("Socorram-me, subi no ônibus em Marrocos");
 	}
 	
 	public static void manipulaString(String manipulada) {
@@ -44,5 +45,13 @@ public class TestaString {
 			System.out.print(manipulada.charAt(i));
 		}
 		System.out.println();
+	}
+	
+	public static void manipulaPartesDaString(String manipulada) {
+		String[] palavras = manipulada.split(" ");
+		for (int i = palavras.length-1; i >= 0; i--) {
+			System.out.print(palavras[i] + 
+							 (i != 0 ? " " : "\n"));
+		}
 	}
 }
