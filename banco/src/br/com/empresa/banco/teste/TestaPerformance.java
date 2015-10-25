@@ -10,6 +10,7 @@ public class TestaPerformance {
 		System.out.println("iniciando...");
 		
 		System.out.println("Teste de inserção e consulta de 30mil objetos.");
+		 
 		 /**
 		  * Teste de inserção e consulta de 30mil.
 		  * ArrayList: 888 - 932ms | Média: 903.2 ms
@@ -51,29 +52,19 @@ public class TestaPerformance {
 	private static long testaEficienciaDaColecao(Collection<Integer> teste) {
 		
 		long inicio = System.currentTimeMillis();
-		
 		int total = 30000;
 		
-//		long mediaParcial = 0;
 		for (int i = 0; i < total; i++) {
-//			long inicioOperacao = System.currentTimeMillis();
 			teste.add(i);
-//			mediaParcial += System.currentTimeMillis() - inicioOperacao;
 		}
-//		System.out.println("Media insercao: " + mediaParcial);
 		
-//		mediaParcial = 0;
 		for (int i = 0; i < total; i++) {
-//			long inicioOperacao = System.currentTimeMillis();
 			teste.contains(i);
-//			mediaParcial += System.currentTimeMillis() - inicioOperacao;
 		}
-//		System.out.println("Media busca: " + mediaParcial);
 		
 		long fim = System.currentTimeMillis();
 		long tempo = fim - inicio;
 		
-//		System.out.println("Tempo gasto: " + tempo);
 		return tempo;
 	}
 }
