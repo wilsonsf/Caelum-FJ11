@@ -32,6 +32,8 @@ public class TestaString {
 		manipulaInversoDaString("Socorram-me, subi no ônibus em Marrocos");
 		manipulaInversoDaString("anotaram a data da maratona");
 		manipulaPartesDaString("Socorram-me, subi no ônibus em Marrocos");
+		manipulaPartesComBuilderDaString("Socorram-me, subi no ônibus em Marrocos");
+		
 	}
 	
 	public static void manipulaString(String manipulada) {
@@ -53,5 +55,16 @@ public class TestaString {
 			System.out.print(palavras[i] + 
 							 (i != 0 ? " " : "\n"));
 		}
+	}
+	
+	public static void manipulaPartesComBuilderDaString(String manipulada) {
+		StringBuilder builder = new StringBuilder();
+		
+		String[] palavras = manipulada.split(" ");
+		for (String umaPalavra : palavras) {
+			builder.append(umaPalavra + " ");
+		}
+		builder.reverse();
+		System.out.println(builder.toString());
 	}
 }
