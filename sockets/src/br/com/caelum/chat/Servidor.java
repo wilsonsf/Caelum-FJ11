@@ -21,7 +21,5 @@ public class Servidor {
 		
 		entrada.close();
 		servidor.close();
-		
 	}
-
 }
